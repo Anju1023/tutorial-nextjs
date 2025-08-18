@@ -12,24 +12,30 @@ export default function Header() {
 					あんじゅのサイト♡
 				</Link>
 
-				<nav className="space-x-6">
+				<nav className="flex space-x-6">
 					<Link
-						href="/"
-						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg"
+						href={'/'}
+						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg inline-block"
 					>
 						ホーム
 					</Link>
 					<Link
-						href="/about"
-						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg"
+						href={'/about'}
+						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg inline-block"
 					>
 						About
 					</Link>
 					<Link
-						href="/profile"
-						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg"
+						href={'/profile'}
+						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg inline-block"
 					>
 						Profile
+					</Link>
+					<Link
+						href={'/gallery'}
+						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg"
+					>
+						Gallery
 					</Link>
 				</nav>
 			</div>
