@@ -1,5 +1,6 @@
 'use client';
 
+import DiaryApp from '@/components/DiaryApp';
 import FoodApp from '@/components/FoodApp';
 import ItemListApp from '@/components/ItemListApp';
 import Footer from '@/components/layouts/footer/Footer';
@@ -16,6 +17,7 @@ export default function Home() {
 				<NameApp />
 				<FoodApp />
 				<ItemListApp />
+				<DiaryApp />
 			</main>
 			<Footer />
 		</div>
