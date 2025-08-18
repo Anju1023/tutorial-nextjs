@@ -37,6 +37,12 @@ export default function Header() {
 					>
 						Gallery
 					</Link>
+					<Link
+						href={'/api'}
+						className="hover:text-pink-200 hover:scale-105 transition-all duration-200 hover:drop-shadow-lg"
+					>
+						API
+					</Link>
 				</nav>
 			</div>
 		</header>

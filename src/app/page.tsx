@@ -6,7 +6,7 @@ import ItemListApp from '@/components/ItemListApp';
 import LightApp from '@/components/LightApp';
 import NameApp from '@/components/NameApp';
 import Step1SimpleAPI from '@/components/Step1SimpleAPI';
-import Step2RealAPI from '@/components/Step2RealAPI';
+import Step2RealAPI from '@/components/api/Step2RealAPI';
 
 export default function Home() {
 	return (
@@ -27,8 +27,6 @@ export default function Home() {
 			<FoodApp />
 			<ItemListApp />
 			<DiaryApp />
-			<Step1SimpleAPI />
-			<Step2RealAPI />
 		</div>
 	);
 }

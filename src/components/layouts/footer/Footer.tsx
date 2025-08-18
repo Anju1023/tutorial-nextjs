@@ -30,6 +30,11 @@ export default function Footer() {
 									Profile
 								</a>
 							</li>
+							<li>
+								<a href="/api" className="hover:text-pink-300">
+									API
+								</a>
+							</li>
 						</ul>
 					</div>
 
