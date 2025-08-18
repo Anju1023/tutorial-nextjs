@@ -15,14 +15,25 @@ export default function DiaryApp() {
 	const [error, setError] = useState<string>('');
 
 	return (
-		<div>
-			<h1>今日の気分日記📓</h1>
-			<div>
-				<label htmlFor="feeling-select">今日の気分</label>
+		<div className="p-8">
+			<h1 className="text-4xl mb-4">今日の気分日記📓</h1>
+
+			{/* エラーメッセージ */}
+			{error && (
+				<div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+					{error}
+				</div>
+			)}
+
+			<div className="mb-4">
+				<label htmlFor="feeling-select" className="block mb-2">
+					今日の気分
+				</label>
 				<select
 					id="feeling-select"
 					value={inputFeeling}
 					onChange={(e) => setInputFeeling(e.target.value)}
+					className="border p-2 rounded mr-2"
 				>
 					<option value="">選んで〜！！</option>
 					<option value="😭">😭</option>
@@ -33,8 +44,10 @@ export default function DiaryApp() {
 				</select>
 				<input
 					type="text"
+					placeholder="今日あったことを書いて〜〜"
 					value={inputComment}
 					onChange={(e) => setInputComment(e.target.value)}
+					className="border p-2 rounded mr-2"
 				/>
 				<button
 					onClick={() => {
@@ -54,18 +67,18 @@ export default function DiaryApp() {
 						setInputComment('');
 						setInputFeeling('');
 					}}
+					className="bg-pink-500 text-white px-4 py-2 rounded"
 				>
 					記録する
 				</button>
 			</div>
 
-			{error && <p className="text-red-500">{error}</p>}
-
-			<ul>
+			<ul className="space-y-2">
 				{diaries.map((diary, index) => (
 					<li
-						key={index}
-						onClick={() => setDiaries(diaries.filter((_, i) => i !== index))}
+						key={diary.id}
+						onClick={() => setDiaries(diaries.filter((d) => d.id !== diary.id))}
+						className="bg-gray-100 p-3 rounded cursor-pointer hover:bg-red-200"
 					>
 						{diary.feeling} {diary.comment} ❌
 					</li>
