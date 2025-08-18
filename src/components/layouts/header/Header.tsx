@@ -1,7 +1,7 @@
 export default function Header() {
 	return (
 		<header className="p-8 shadow-md">
-			<div className="flex justify-between">
+			<div className="flex justify-between mx-w-200">
 				<h1 className="text-2xl font-bold text-neutral-700">ページだよ</h1>
 				<nav>
 					<ul className="flex gap-4">
