@@ -1,6 +1,7 @@
 'use client';
 
 import FoodApp from '@/components/FoodApp';
+import ItemListApp from '@/components/ItemListApp';
 import Footer from '@/components/layouts/footer/Footer';
 import Header from '@/components/layouts/header/Header';
 import LightApp from '@/components/LightApp';
@@ -14,6 +15,7 @@ export default function Home() {
 				<LightApp />
 				<NameApp />
 				<FoodApp />
+				<ItemListApp />
 			</main>
 			<Footer />
 		</div>
