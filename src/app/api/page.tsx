@@ -1,4 +1,4 @@
-import Step1SimpleAPI from '../../components/Step1SimpleAPI';
+import Step1SimpleAPI from '../../components/api/Step1SimpleAPI';
 import Step2RealAPI from '../../components/api/Step2RealAPI';
 
 export default function APIApp() {
