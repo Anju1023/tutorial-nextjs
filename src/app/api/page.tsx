@@ -4,6 +4,7 @@ import Step1SimpleAPI from '../../components/api/Step1SimpleAPI';
 import Step2RealAPI from '../../components/api/Step2RealAPI';
 import Step4MultiAPIpractice from '@/components/api/Step4MultiAPIpractice';
 import Step5UseEffectPractice from '@/components/api/Step5UseEffectPractice';
+import Step6TranslationFeature from '@/components/api/Step6TranslationFeature';
 
 export default function APIApp() {
 	return (
@@ -54,6 +55,9 @@ export default function APIApp() {
 				<hr className="border-2 border-gray-200" />
 
 				<Step5UseEffectPractice />
+				<hr className="border-2 border-gray-200" />
+
+				<Step6TranslationFeature />
 			</div>
 
 			{/* 学習の進歩表示 */}
