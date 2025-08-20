@@ -2,6 +2,7 @@ import Step3Loading from '@/components/api/Step3Loading';
 import Step4ErrorHandling from '@/components/api/Step4ErrorHandling'; // 新しく追加！
 import Step1SimpleAPI from '../../components/api/Step1SimpleAPI';
 import Step2RealAPI from '../../components/api/Step2RealAPI';
+import Step4MultiAPIpractice from '@/components/api/Step4MultiAPIpractice';
 
 export default function APIApp() {
 	return (
@@ -46,6 +47,9 @@ export default function APIApp() {
 				<hr className="border-2 border-gray-200" />
 
 				<Step4ErrorHandling />
+				<hr className="border-2 border-gray-200" />
+
+				<Step4MultiAPIpractice />
 			</div>
 
 			{/* 学習の進歩表示 */}
